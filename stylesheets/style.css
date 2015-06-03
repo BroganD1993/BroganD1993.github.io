@@ -1,10 +1,10 @@
 body {
     margin: 0 auto;
-    width: 50%;
+    width: 59%;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-size: 0.9em;
     line-height: 20px;
-    max-width: 1200px;
+    max-width: 1260px;
     min-width: 270px;
     margin-top: 25px;
     margin-bottom: 10px;
@@ -27,7 +27,7 @@ p {
 h1 {
     display: block;
     padding-bottom: 3px;
-    margin-bottom: 6px;
+    margin-bottom: 7px;
     font-size:1.5em;
     font-weight: bold;
     border-bottom: 1px solid #ccc;
@@ -94,6 +94,10 @@ section {
     text-align: justify;
 }
 
+section p {
+    text-align: justify;
+}
+
 
 section:after {          
     content: "";
@@ -111,16 +115,21 @@ section img {
     float: left;
 }
 
+section article ul li {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+}
+
 section article {
     text-align: left;
     display: inline-block;
-    margin-top: 5px;
+    vertical-align: top;
     margin-right: 5px;
 }
 
 section article img {
-    width: 120px; 
-    height: 80px;
+    width: 100px; 
+    height: auto;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -129,22 +138,30 @@ section article img {
 }
 
 section article heading {
-    margin-bottom: 5px;
-    font-size:1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
     display: block;
     text-align: justify;
     font-weight: bold;
+    line-height: 0;
 }
 
 section article heading h2 {
+    font-size: 1.1em;
+    text-align: left;
     display: inline-block;
 }
 
 section article heading date {
+    text-align: left;
     display: inline-block;
 }
 
-section article heading:after {    
+section article heading:after {   
+    height: 0;
+    font-size: 0;
+    line-height: 0;
     content: " ";
     width: 100%;
     display: inline-block;
@@ -155,24 +172,28 @@ section article a {
 }
 
 .social_option {
-    text-align: left;
-    margin-bottom: 30px;
+    display: inline-block;
+    font-size:1.1em;
 }
 
 .social_option img {
     opacity:.7;
     filter:alpha(opacity=70);
     border: none;
-    width: 40px; 
-    height: 40px;
+    width: 18px; 
+    height: 18px;
 }
 
-.social_option img:hover {
-    opacity:.4;
-    filter:alpha(opacity=40);
+.social_option:hover {
+    opacity:.6;
+    filter:alpha(opacity=60);
 }
 
-.social_option p {
-    padding-top: 10px;
-    font-size:1.3em;
+.social_option:after {   
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    content: " ";
+    width: 100%;
+    display: inline-block;
 }

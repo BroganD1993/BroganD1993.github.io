@@ -1,0 +1,100 @@
+body { 
+    background: white; 
+    font-size: 6pt; 
+    width: 90%;
+}
+
+.content {
+    overflow: auto;
+    margin: 0;
+    padding-top: 0px;
+}
+
+* { 
+    background: transparent !important; 
+    color: black !important; 
+    text-shadow: none !important; 
+    filter:none !important;
+    -ms-filter: none !important; 
+} 
+
+p a, p a:visited { 
+    color: #444 !important; 
+    text-decoration: underline; 
+}
+
+p a[href]:after { 
+    content: " (" attr(href) ")"; 
+}
+
+abbr[title]:after { 
+    content: " (" attr(title) ")"; 
+}
+
+.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+    content: ""; 
+} 
+
+h1 {
+    margin-bottom: 0px;
+}
+
+pre, blockquote { 
+    border: 1px solid #999; 
+    page-break-inside: avoid; 
+}
+
+thead { 
+    display: table-header-group; 
+}
+
+tr, img {
+    page-break-inside: avoid; 
+}
+
+@page { 
+    margin: 0.7cm; 
+}
+
+p, h3 { 
+    orphans: 3; 
+    widows: 3; 
+}
+
+h3{ 
+    page-break-after: avoid; 
+}
+
+section article {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0px;
+}
+
+section img {
+    width: 65px; 
+    height: 85px;
+}
+
+section article img {
+    width: 72px; 
+    height: 72px;
+}
+
+.hide-on-print { 
+    display: none !important; 
+}
+
+.print-only { 
+    display: block !important; 
+}
+
+#wrapper, 
+#content { 
+    width: auto; 
+    margin: 0.5%; 
+    padding: 0; 
+    border: 0; 
+    color: black; 
+    background: transparent none; 
+}
