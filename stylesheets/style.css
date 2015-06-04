@@ -33,52 +33,6 @@ h1 {
     border-bottom: 1px solid #ccc;
 }
 
-/*
-   ========================================
-   ----------------- Menu -----------------
-   ======================================== 
-*/
-.menu {
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.menu li {
-    width: auto; 
-    display: inline-block;
-}
-
-.menu li a {
-    display:inline;
-    zoom:1;
-    padding: 5px 10px 5px 10px;
-    font-size: 1.7em;
-    text-transform: uppercase;
-    color: #777;
-    height: 1.7em;
-    line-height: 1.7em;
-    transition: all .5s;
-    -o-transition: all .5s;
-    -ms-transition: all .5s;
-    -moz-transition: all .5s;
-    -webkit-transition: all .5s;
-}
-
-
-.menu li a:hover, .menu li a:focus {
-    background-color: #eeeeee;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    border-radius: 7px;
-}
-
-.menu li .selected {
-    background: #000;  
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    border-radius: 7px;                    
-}
-
 /* ========================================
    ----------------- Content --------------
    ======================================== */
@@ -95,7 +49,7 @@ section {
 }
 
 section p {
-    text-align: justify;
+    text-align: left;
 }
 
 
@@ -137,38 +91,52 @@ section article img {
     float: left;
 }
 
+section article a {
+    color: #000;
+}
+
 section article heading {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 1px;
     font-size: 1.1em;
     display: block;
     text-align: justify;
     font-weight: bold;
-    line-height: 0;
+    line-height: 1.1;
+    color: #666;
 }
 
-section article heading h2 {
+section article heading a  {
+    color: #666;
+}
+
+section article heading .at  {
+    font-weight: normal;
+    font-style: italic;
+    display: inline;
+}
+
+section article heading h2  {
     font-size: 1.1em;
-    text-align: left;
     display: inline-block;
 }
 
 section article heading date {
-    text-align: left;
     display: inline-block;
 }
 
+section article heading .to  {
+    font-weight: normal;
+    font-style: italic;
+    display: inline;
+}
+
 section article heading:after {   
-    height: 0;
     font-size: 0;
     line-height: 0;
     content: " ";
     width: 100%;
     display: inline-block;
-}
-
-section article a {
-    color: #000;
 }
 
 .social_option {
@@ -178,7 +146,7 @@ section article a {
 
 .social_option img {
     opacity:.7;
-    filter:alpha(opacity=70);
+    filter:alpha(opacity=80);
     border: none;
     width: 18px; 
     height: 18px;
@@ -196,4 +164,11 @@ section article a {
     content: " ";
     width: 100%;
     display: inline-block;
+}
+
+.skill {
+    text-align: center;
+    display: inline-block;
+    font-size:1.1em;
+    width: 25%;
 }
